@@ -1,0 +1,15 @@
+.hero {
+  &__heading--primary {
+    font-size: 5.5rem;
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -0.5px;
+    margin-bottom: 3.2rem;
+  }
+
+  &__heading--description {
+    font-size: 2rem;
+    line-height: 1.6;
+    margin-bottom: 4.8rem;
+  }
+}

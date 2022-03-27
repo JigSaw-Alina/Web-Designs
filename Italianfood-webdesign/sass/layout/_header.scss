@@ -1,0 +1,13 @@
+.logo {
+  height: 6.4rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: $color-tint;
+  height: 9.6rem;
+  padding: 0 4.8rem;
+}

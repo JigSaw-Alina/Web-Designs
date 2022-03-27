@@ -1,0 +1,6 @@
+@mixin button-list($top, $button) {
+  background-color: $color-primary;
+  color: $color-white;
+  border-radius: 9px;
+  padding: $top $button;
+}
