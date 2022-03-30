@@ -216,6 +216,25 @@ body {
 .step__img {
   width: 35%; }
 
+.feature-icon {
+  color: #e67e22;
+  width: 3.2rem;
+  height: 3.2rem;
+  background-color: #fdf2e9;
+  border-radius: 50%;
+  padding: 1.6rem;
+  margin-bottom: 3.2rem; }
+
+.feature-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1.6rem; }
+
+.feature-text {
+  font-size: 1.8rem;
+  line-height: 1.8; }
+
 .hero {
   max-width: 130rem;
   margin: 0 auto;
@@ -236,10 +255,14 @@ body {
   display: grid;
   column-gap: 6.4rem;
   row-gap: 9.6rem; }
+  .grid:not(:last-child) {
+    margin-bottom: 9.6rem; }
   .grid__2--cols {
     grid-template-columns: repeat(2, 2fr); }
   .grid__3--cols {
     grid-template-columns: repeat(3, 3fr); }
+  .grid__4--cols {
+    grid-template-columns: repeat(4, 1fr); }
   .grid__center--v {
     align-self: center; }
 
@@ -268,6 +291,10 @@ body {
     .gallery__item img:hover {
       transform: scale(1.1);
       opacity: 1; }
+
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr; }
 
 .section-hero {
   background-color: #fdf2e9;
@@ -323,23 +350,21 @@ body {
   .meal strong {
     font-weight: 600; }
 
-.diets__icon {
-  height: 3rem;
-  width: 3rem;
-  color: #e67e22; }
-
-.diets__list {
+.list {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 1.6rem; }
-
-.diets__list--item {
-  font-size: 1.8rem;
-  line-height: 1.2;
-  display: flex;
-  align-items: center;
-  gap: 2rem; }
+  .list__icon {
+    height: 3rem;
+    width: 3rem;
+    color: #e67e22; }
+  .list__item {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    gap: 2rem; }
 
 .logo {
   height: 6.4rem; }
@@ -368,3 +393,58 @@ body {
 .testimonial__name {
   font-size: 1.6rem;
   color: #555; }
+
+.pricing__plan {
+  border-radius: 11px;
+  width: 75%; }
+  .pricing__plan--starter {
+    justify-self: end;
+    border: 2px solid #fdf2e9;
+    padding: 4.2rem; }
+  .pricing__plan--complete {
+    background-color: #fdf2e9;
+    padding: 4.8rem;
+    position: relative;
+    overflow: hidden; }
+    .pricing__plan--complete::after {
+      content: "Best value";
+      position: absolute;
+      top: 6%;
+      right: -18%;
+      font-size: 1.4rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 0.8rem 8rem;
+      color: #333;
+      background-color: #ffd43b;
+      transform: rotate(45deg); }
+  .pricing__plan--header {
+    text-align: center; }
+  .pricing__plan--name {
+    font-size: 2rem;
+    color: #e67e22;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.75;
+    margin-bottom: 3.2rem; }
+  .pricing__plan--price {
+    font-size: 6rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1.6rem; }
+    .pricing__plan--price span {
+      font-size: 3rem;
+      font-weight: 600;
+      margin-right: 0.8rem; }
+  .pricing__plan--text {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: #6f6f6f; }
+  .pricing__plan--details {
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 1.6; }
+
+.pricing__sign-up {
+  text-align: center;
+  margin-top: 4.8rem; }
