@@ -12,3 +12,58 @@
     width: 100%;
   }
 }
+
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+
+  &__2--cols {
+    @include col(2, 2fr);
+  }
+
+  &__3--cols {
+    @include col(3, 3fr);
+  }
+
+  &__center--v {
+    align-self: center;
+  }
+}
+
+.testimonials {
+  @include testimonialGrid(2, 2fr, null, 4.8rem, 8rem);
+}
+
+.section-testimonials {
+  background-color: $color-tint;
+  align-items: center;
+  @include testimonialGrid(1, 55fr, 45fr);
+}
+
+.gallery {
+  @include testimonialGrid(3, 3fr, null, null, null);
+
+  &__item {
+    overflow: hidden;
+  }
+
+  &__item img {
+    display: block;
+
+    width: 100%;
+    opacity: 0.7;
+    transition: all 0.4s;
+
+    &:hover {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+  }
+}

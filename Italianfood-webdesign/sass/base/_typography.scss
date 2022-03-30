@@ -1,10 +1,8 @@
 .hero {
   &__heading--primary {
     font-size: 5.5rem;
-    font-weight: 700;
-    line-height: 1.05;
-    letter-spacing: -0.5px;
     margin-bottom: 3.2rem;
+    @include heading;
   }
 
   &__heading--description {
@@ -12,4 +10,28 @@
     line-height: 1.6;
     margin-bottom: 4.8rem;
   }
+}
+
+.subheading {
+  display: block;
+  font-size: 2rem;
+  font-weight: 500;
+  color: $color-primary-dark;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.2rem;
+  color: $color-black;
+  @include heading;
+}
+
+.heading-tertiary {
+  color: $color-black;
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
 }
