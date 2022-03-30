@@ -4,3 +4,35 @@
   border-radius: 9px;
   padding: $top $button;
 }
+
+@mixin col($num, $fr) {
+  grid-template-columns: repeat($num, $fr);
+}
+
+@mixin heading {
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.5px;
+}
+
+@mixin circleBeforeAfter($wd, $pd, $col, $zin) {
+  content: "";
+  display: block;
+  width: $wd;
+  padding-bottom: $pd;
+  border-radius: 50%;
+  background-color: $col;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: $zin;
+}
+
+@mixin testimonialGrid($copy, $val1, $val2: null, $rgap: null, $cgap: null) {
+  display: grid;
+  grid-template-columns: repeat($copy, $val1 $val2);
+  row-gap: $rgap;
+  column-gap: $cgap;
+}

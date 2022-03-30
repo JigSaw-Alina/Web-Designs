@@ -1,0 +1,22 @@
+.testimonial-container {
+  padding: 9.6rem;
+}
+
+.testimonial {
+  &__img {
+    width: 6.4rem;
+    border-radius: 50%;
+    margin-bottom: 1.2rem;
+  }
+
+  &__text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 1.6rem;
+  }
+
+  &__name {
+    font-size: 1.6rem;
+    color: $color-grey-dark;
+  }
+}
