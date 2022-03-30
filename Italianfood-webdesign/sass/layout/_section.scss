@@ -80,20 +80,19 @@
   }
 }
 
-.diets {
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+
   &__icon {
     height: 3rem;
     width: 3rem;
     color: $color-primary;
   }
-  &__list {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 1.6rem;
-  }
 
-  &__list--item {
+  &__item {
     font-size: 1.8rem;
     line-height: 1.2;
     display: flex;

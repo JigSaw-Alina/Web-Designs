@@ -24,12 +24,20 @@
   column-gap: 6.4rem;
   row-gap: 9.6rem;
 
+  &:not(:last-child) {
+    margin-bottom: 9.6rem;
+  }
+
   &__2--cols {
     @include col(2, 2fr);
   }
 
   &__3--cols {
     @include col(3, 3fr);
+  }
+
+  &__4--cols {
+    @include col(4, 1fr);
   }
 
   &__center--v {
@@ -66,4 +74,9 @@
       opacity: 1;
     }
   }
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
