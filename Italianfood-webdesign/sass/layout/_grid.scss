@@ -79,4 +79,17 @@
 .cta {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  background-color: $color-primary;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+
+  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+  overflow: hidden;
+
+  &__form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 3.2rem;
+    column-gap: 2.4rem;
+  }
 }
