@@ -40,9 +40,17 @@
     @include col(4, 1fr);
   }
 
+  &__5--cols {
+    @include col(5, 1fr);
+  }
+
   &__center--v {
     align-self: center;
   }
+}
+
+.grid--footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
 }
 
 .testimonials {
