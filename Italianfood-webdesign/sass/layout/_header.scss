@@ -10,4 +10,9 @@
   background-color: $color-tint;
   height: 9.6rem;
   padding: 0 4.8rem;
+  position: relative;
+
+  @include respond(tab-land) {
+    padding: 0 3.2rem;
+  }
 }

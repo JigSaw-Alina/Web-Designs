@@ -1,6 +1,10 @@
 .section-hero {
   background-color: $color-tint;
   padding: 4.8rem 0 9.6rem 0;
+
+  @include respond(phone) {
+    padding: 2.4rem 0 6.4rem 0;
+  }
 }
 
 .meal {
@@ -20,6 +24,10 @@
 
   &__content {
     padding: 3.8rem 4.8rem 4.8rem 4.8rem;
+
+    @include respond(tab-port) {
+      padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+    }
   }
 
   &__meal--tags {
@@ -98,5 +106,12 @@
     display: flex;
     align-items: center;
     gap: 2rem;
+  }
+}
+
+.diets {
+  @include respond(small-tablet) {
+    grid-column: 1 / -1;
+    justify-self: center;
   }
 }

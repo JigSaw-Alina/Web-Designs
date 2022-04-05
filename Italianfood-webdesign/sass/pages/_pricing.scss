@@ -68,6 +68,10 @@
       font-size: 1.6rem;
       line-height: 1.6;
     }
+
+    @include respond(small-tablet) {
+      width: 100%;
+    }
   }
 
   &__sign-up {

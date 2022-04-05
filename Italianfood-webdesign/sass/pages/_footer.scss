@@ -69,6 +69,18 @@
   &__link:active {
     color: $color-black;
   }
+
+  @include respond(small-tablet) {
+    &__nav--col {
+      grid-row: 1;
+      grid-column: span 2;
+    }
+
+    &__logo--col,
+    &__address--col {
+      grid-column: span 3;
+    }
+  }
 }
 
 .contacts {

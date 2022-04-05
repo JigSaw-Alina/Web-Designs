@@ -27,6 +27,10 @@
   & span {
     color: $color-primary-dark;
   }
+
+  @include respond(tab-port) {
+    justify-content: center;
+  }
 }
 
 .section-featured {
@@ -51,6 +55,18 @@
     height: 3.2rem;
     filter: brightness(0);
     opacity: 50%;
+  }
+
+  @include respond(tab-port) {
+    & img {
+      height: 2.4rem;
+    }
+  }
+
+  @include respond(phone) {
+    & img {
+      height: 1.2rem;
+    }
   }
 }
 
@@ -84,6 +100,30 @@
 
   &__img {
     width: 35%;
+  }
+
+  @include respond(tab-port) {
+    & img {
+      height: 2.4rem;
+    }
+
+    &__number {
+      font-size: 7.4rem;
+    }
+  }
+
+  @include respond(phone) {
+    &__img--box:nth-child(2) {
+      grid-row: 1;
+    }
+
+    &__img--box:nth-child(6) {
+      grid-row: 5;
+    }
+
+    &__img--box {
+      transform: translateY(2.4rem);
+    }
   }
 }
 
