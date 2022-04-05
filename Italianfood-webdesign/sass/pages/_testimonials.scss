@@ -1,5 +1,9 @@
 .testimonial-container {
   padding: 9.6rem;
+
+  @include respond(tab-land) {
+    padding: 9.6rem;
+  }
 }
 
 .testimonial {
