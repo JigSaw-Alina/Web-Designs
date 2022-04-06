@@ -94,6 +94,7 @@
 
   @include respond(tab-port) {
     display: block;
+    z-index: 9999;
   }
 }
 
