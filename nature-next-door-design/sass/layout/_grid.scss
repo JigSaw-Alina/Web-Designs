@@ -1,0 +1,17 @@
+.container {
+  width: 114rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  column-gap: 6rem;
+
+  &__center-v {
+    align-self: center;
+  }
+
+  &__col-1-of-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

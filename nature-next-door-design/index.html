@@ -4,24 +4,70 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lato:wght@100;300;400;700;900&display=swap"
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap"
     />
+
     <title>nature-next-door</title>
   </head>
   <body>
     <main>
       <header class="header">
-        <div class="logo-box" alt="logo"></div>
+        <div class="header__logo-box">
+          <img src="img/logo.png" alt="natures logo" class="header__logo" />
+        </div>
+        <div class="header__text-box">
+          <h1 class="heading-primary">
+            <span class="heading-primary--main">Creatives</span>
+            <span class="heading-primary--sub">is where life happens</span>
+          </h1>
+          <a href="#" class="btn btn--white btn--animated"
+            >Discover our tours</a
+          >
+        </div>
       </header>
-      <section class="section-hero">
-        <div class="text-box">
-          <div class="header-primary">
-            <span class="header__primary--main">Outdoorss</span>
-            <div class="header__primary--sub">is where life happens</div>
+      <section class="section-info">
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">Exciting tours for adventures</h2>
+        </div>
+        <div class="container grid grid__col-1-of-2 grid__center-v">
+          <div>
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              You're going to fall in love with nature
+            </h3>
+            <p class="paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+              ullam ipsam, voluptatem at, expedita cupiditate esse accusantium
+              asperiores amet dolore, error molestiae placeat.
+            </p>
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              Live adventures like you never have before
+            </h3>
+            <p class="paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+              ullam ipsam, voluptatem at, expedita cupiditate.
+            </p>
+            <a href="#" class="btn-text">Learn more &rarr;</a>
           </div>
-          <a href="#" class="btn">Discover our tours</a>
+          <div class="composition">
+            <img
+              src="img/nat-1.jpg"
+              alt=""
+              class="composition__photo composition__photo--p1"
+            /><img
+              src="img/nat-2.jpg"
+              alt=""
+              class="composition__photo composition__photo--p2"
+            /><img
+              src="img/nat-3.jpg"
+              alt=""
+              class="composition__photo composition__photo--p3"
+            />
+          </div>
         </div>
       </section>
     </main>
