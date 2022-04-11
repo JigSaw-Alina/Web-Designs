@@ -6,10 +6,15 @@
   box-sizing: inherit;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: sans-serif;
   line-height: 1;
   font-weight: 400;
   box-sizing: border-box;
   color: $color-grey-dark;
+  padding: 3rem;
 }
