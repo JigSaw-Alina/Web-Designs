@@ -226,6 +226,28 @@ body {
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.9); }
 
+.feature--starter {
+  justify-items: center; }
+
+.feature-box {
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 0.3rem;
+  box-shadow: 0 1.5rem 4rem rgba(51, 51, 51, 0.15);
+  transition: transform 0.3s; }
+  .feature-box__icon {
+    font-size: 6rem;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    background-image: linear-gradient(to right, #4ec6d9, #115c68);
+    -webkit-background-clip: text;
+    color: transparent; }
+  .feature-box:hover {
+    transform: translateY(-1.5rem) scale(1.03); }
+
 .header {
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(78, 198, 217, 0.7), rgba(17, 92, 104, 0.7)), url(../../img/hero.jpg);
@@ -257,8 +279,27 @@ body {
     align-self: center; }
   .grid__col-1-of-2 {
     grid-template-columns: repeat(2, 1fr); }
+  .grid__col-1-of-3 {
+    grid-template-columns: repeat(3, 1fr); }
+  .grid__col-1-of-4 {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 4rem; }
 
 .section-info {
   background-color: #f7f7f7;
-  padding: 25rem 0;
+  padding: 33rem 0;
   margin-top: -15vh; }
+
+.section-features {
+  padding: 20rem 0;
+  background-image: linear-gradient(to right bottom, rgba(78, 198, 217, 0.7), rgba(17, 92, 104, 0.7)), url(../../img/nat-4.jpg);
+  background-size: cover;
+  background-position: bottom;
+  transform: skewY(-7deg);
+  margin-top: -7rem; }
+  .section-features > * {
+    transform: skewY(7deg); }
+
+.section-tour {
+  background-color: #f7f7f7;
+  padding: 25rem 0; }
