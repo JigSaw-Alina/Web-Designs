@@ -27,6 +27,11 @@
     color: #777;
   }
 
+  &--blue {
+    background-color: $color-primary;
+    color: $color-white;
+  }
+
   &::after {
     content: "";
     display: inline-block;
@@ -42,6 +47,10 @@
 
   &--white::after {
     background-color: $color-white;
+  }
+
+  &--blue::after {
+    background-color: $color-primary;
   }
 
   &:hover::after {
