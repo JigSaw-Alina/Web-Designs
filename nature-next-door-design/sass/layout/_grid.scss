@@ -1,6 +1,7 @@
 .container {
-  width: 114rem;
+  max-width: 114rem;
   margin: 0 auto;
+  margin-bottom: 5rem;
 }
 
 .grid {
@@ -13,17 +14,14 @@
 
   &__col-1-of-2 {
     grid-template-columns: repeat(2, 1fr);
-    
   }
 
   &__col-1-of-3 {
-    grid-template-columns: repeat(3,1fr)
+    grid-template-columns: repeat(3, 1fr);
   }
 
   &__col-1-of-4 {
     grid-template-columns: repeat(4, 1fr);
     column-gap: 4rem;
   }
-
-  
 }
