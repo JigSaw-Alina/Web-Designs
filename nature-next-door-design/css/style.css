@@ -663,6 +663,17 @@ body {
 .navigation__button:hover .navigation__icon::after {
   top: 1rem; }
 
+.navigation__checkbox:checked + .navigation__button .navigation__icon {
+  background-color: transparent; }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+  top: 0;
+  transform: rotate(135deg); }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+  top: 0;
+  transform: rotate(-135deg); }
+
 .section-info {
   background-color: #f7f7f7;
   padding: 24rem 0 35rem 0;
